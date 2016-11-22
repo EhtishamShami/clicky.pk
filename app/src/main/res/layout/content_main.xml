@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content_main"
+    android:background="#d5d6d9"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="64dp"
+    android:orientation="vertical"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.shami.clicky.MainActivity"
+    tools:showIn="@layout/app_bar_main">
+
+    <!-- Menu bar comes here session two -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:background="#FFFFFF"
+        >
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/my_recentfriends_recyle"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+    <!-- Session two ends here -->
+
+    <!-- Image Flipper part of layout session 1 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/activity_horizontal_margin"
+        >
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY"
+            android:padding="2dp"
+            android:src="@drawable/yoyo"
+            />
+    </LinearLayout>
+
+    <!-- session 1 Ends Here-->
+
+<!-- Promotion session 3 starts here -->
+    <LinearLayout
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="180dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/offer1"
+            />
+
+        </LinearLayout>
+
+<!-- Session three ends here -->
+
+<!-- Session big scroll view starts here -->
+<HorizontalScrollView
+    android:paddingTop="@dimen/activity_horizontal_margin"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="@dimen/activity_horizontal_margin"
+    android:layout_marginLeft="@dimen/activity_horizontal_margin"
+    android:layout_marginRight="@dimen/activity_horizontal_margin"
+    android:orientation="horizontal"
+    android:background="@android:color/white"
+    android:padding="8dp"
+    >
+
+<ImageView
+    android:layout_width="252dp"
+    android:layout_height="252dp"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:scaleType="fitXY"
+    android:src="@drawable/square_1"
+    />
+
+
+    <ImageView
+        android:layout_width="252dp"
+        android:layout_height="252dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/square_2"
+        />
+
+
+</LinearLayout>
+
+
+</HorizontalScrollView>
+
+<!-- Horizontal big adds ends here -->
+
+    <!-- Session small scroll view starts here -->
+    <HorizontalScrollView
+        android:paddingTop="@dimen/activity_horizontal_margin"
+        android:paddingBottom="@dimen/activity_horizontal_margin"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:orientation="horizontal"
+            android:background="@android:color/white"
+            android:padding="3dp"
+            >
+
+            <ImageView
+                android:layout_width="200dp"
+                android:layout_height="100dp"
+                android:padding="8dp"
+                android:src="@drawable/rect_1"
+                />
+
+
+            <ImageView
+                android:layout_width="200dp"
+                android:layout_height="100dp"
+                android:src="@drawable/rect_2"
+                />
+
+
+        </LinearLayout>
+
+
+    </HorizontalScrollView>
+
+    <!-- Horizontal small adds ends here -->
+
+    <!-- Menu bar comes here session two -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:background="#FFFFFF"
+        android:layout_marginBottom="16dp"
+        >
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/brands_recycler"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+    <!-- Session two ends here -->
+
+
+</LinearLayout>
+
+</ScrollView>

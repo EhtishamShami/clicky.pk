@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ECEFF1"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.shami.clicky.Main8Activity">
+    <!-- Session one starts here -->
+
+    <RelativeLayout
+        android:background="@android:color/black"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="@dimen/activity_horizontal_margin"
+        >
+        <TextView
+            android:text="Order Placed"
+            android:textAlignment="center"
+            android:textSize="20dp"
+            android:textColor="@android:color/white"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:text="Step 3/3"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:textColor="@android:color/white"
+            android:textSize="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:src="@drawable/doneimg"
+            android:layout_gravity="center"
+            android:id="@+id/imageView3"
+            />
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="WELDONE!"
+                android:textSize="25dp"
+                android:gravity="center"
+                android:textColor="#4CAF50"
+                android:layout_gravity="center"
+                />
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Order has been placed now!"
+                android:layout_marginTop="10dp"
+                android:textSize="20dp"
+                android:gravity="center"
+                android:textColor="#212121"
+                android:layout_gravity="center"
+                />
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Go Back Now!"
+                    android:layout_gravity="bottom"
+                    android:gravity="center"
+                    android:id="@+id/btn8"
+                    android:onClick="btn8_onClick"
+                    android:textColor="#fff"
+                    android:textSize="20dp"
+                    android:background="#4CAF50"
+                    android:layout_margin="10dp"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

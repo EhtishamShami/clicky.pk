@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_women"
+            android:icon="@mipmap/women"
+            android:title="Women" />
+        <item
+            android:id="@+id/nav_men"
+            android:icon="@mipmap/men"
+            android:title="Men" />
+        <item
+            android:id="@+id/nav_kids"
+            android:icon="@mipmap/kids"
+            android:title="Kids" />
+        <item
+            android:id="@+id/nav_furniture"
+            android:icon="@mipmap/furniture"
+            android:title="Furniture" />
+    </group>
+
+    <item android:title="Explore"
+
+        >
+        <menu>
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/ic_menu_share"
+                android:title="Share" />
+            <item
+                android:id="@+id/nav_send"
+                android:icon="@drawable/ic_menu_send"
+                android:title="Send" />
+        </menu>
+    </item>
+
+</menu>
